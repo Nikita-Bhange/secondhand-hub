@@ -9,7 +9,7 @@ const Header = () => {
   const style ='text-3xl, cursor-pointer, ml-[25px] mobile:ml-[5px]';
   return (
    <>
-      <div className=' fixed bg-white w-full shadow-lg pr-[13px] z-50  '>
+      <div className=' static  bg-white w-full shadow-lg pr-[13px] z-50  '>
       <div className="wrapper pr-[10px] flex justify-between items-center mobile:pl-0 mobile:pr-0">
         
         <div className='w-[160px] m-3 pl-4'>
