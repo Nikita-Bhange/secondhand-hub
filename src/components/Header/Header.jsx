@@ -3,9 +3,7 @@ import logo from '../../assets/logo.png'
 import { Search,  ShoppingCartOutlined, AccountCircle } from "@material-ui/icons";
 import { NavLink } from 'react-router-dom';
 
-
 const Header = () => {
-  
   const style ='text-3xl, cursor-pointer, ml-[25px] mobile:ml-[5px]';
   return (
    <>
@@ -28,7 +26,7 @@ const Header = () => {
          <NavLink className={style}><p>Categories</p></NavLink>
          <NavLink className={style}><p>About us</p></NavLink>
          <NavLink className={style}><ShoppingCartOutlined/></NavLink>
-         <NavLink className={style}><AccountCircle/></NavLink>  
+         <NavLink className={style} to="/profile"><AccountCircle/></NavLink>  
         
        </ul>
       
