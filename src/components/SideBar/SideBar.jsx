@@ -2,7 +2,7 @@ import React from 'react'
 
 const SideBar = ({hasCategory}) => {
   return (
-    <div className="md:sticky top-0 sm:max-h-[fit-content] h-screen overflow-y-auto w-full md:w-1/4 bg-gray-100 p-4">
+    <div className="md:sticky max-h-fit top-0 md:max-h-screen h-screen overflow-y-auto w-full md:w-1/4 bg-gray-300 p-8 ">
     <h2 className="text-xl font-semibold mb-4">Filters</h2>
     {hasCategory && (
       <div className="mb-6">

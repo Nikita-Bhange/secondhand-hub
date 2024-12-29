@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import UserInfo from '../components/UserInfo/UserInfo';
-import Policy from '../components/Policy';
 import jsPDF from "jspdf"
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 const Payment = () => {
     const [displayMessage, setDisplayMessage] = useState(false);
     const [paymentMethod, setPaymentMethod] = useState("Cash on delivery");
@@ -26,6 +27,8 @@ const Payment = () => {
     };
 
     return (
+        <>
+        <Header/>
         <div className="min-h-screen flex flex-col justify-center items-center p-4 bg-slate-100">
             {/* Success Message */}
             {displayMessage && (
@@ -83,6 +86,8 @@ const Payment = () => {
                 )}
             </div>
         </div>
+        <Footer/>
+        </>
     );
 };
 

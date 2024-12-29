@@ -18,7 +18,7 @@ const Products = ({ category }) => {
         {[...Array(8)].map((_, index) => (
           <div
             key={index}
-            className="border p-4 m-4 rounded shadow hover:shadow-lg w-[80%] md:w-[20vw] hover:cursor-pointer flex md:flex-col self-center transition hover:scale-110"
+            className="border p-4 m-4 rounded shadow hover:shadow-lg w-full md:w-[20vw] hover:cursor-pointer flex md:flex-col self-center transition hover:scale-110 "
           >
             <img
               src={`https://via.placeholder.com/150`}
@@ -29,16 +29,16 @@ const Products = ({ category }) => {
               <h3 className="font-medium text-lg mb-2">Product {index + 1}</h3>
               <p className="text-gray-500">Rs 999</p>
               <div className="btn flex md:justify-between flex-col md:flex-row gap-2">
-                <button
+                <div
                   onClick={() => handleFavourite(index)}
-                  className="mt-2 bg-gray-100 p-2 rounded flex justify-center items-center hover:bg-gray-200"
+                  className="mt-2 p-2 flex justify-center items-center "
                 >
                   {favourites[index] ? (
-                    <FavoriteIcon className="text-red-500" />
+                    <FavoriteIcon className="text-red-500 bg-inherit" />
                   ) : (
-                    <FavoriteBorderIcon />
+                    <FavoriteBorderIcon className=" bg-inherit"/>
                   )}
-                </button>
+                  </div>
                 <button className="mt-2 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">
                   Buy Now
                 </button>

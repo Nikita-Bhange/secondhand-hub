@@ -2,9 +2,13 @@ import React, { useContext, useState } from "react";
 import UserInfo from "../components/UserInfo/UserInfo"; 
 import Posts from "../components/posts/Posts";
 import { UserContext} from "../context/User";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 function Profile() {
   const {input,setInput} = useContext(UserContext)
   return (
+    <>
+    <Header/>
     <div className="min-h-screen bg-gray-100 flex justify-center items-center">
       <div className="bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-4xl m-10">
         {/* Profile Header */}
@@ -27,6 +31,8 @@ function Profile() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 
