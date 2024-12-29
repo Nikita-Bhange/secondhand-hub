@@ -1,25 +1,25 @@
-import {React,useContext,useState} from "react";
+import { React, useContext, useState } from "react";
 import EditIcon from "@material-ui/icons/Edit";
 import DoneIcon from "@material-ui/icons/Done";
-import { UserContext} from "../../context/User";
+import { UserContext } from "../context/User";
 const UserInfo = () => {
-    const [change, setChange] = useState(false);
-    const {input,setInput} = useContext(UserContext)
-    const handleEditToggle = () => {
-      setChange(!change);
-    };
-  
-    const handleInputChange = (e) => {
-      const { name, value } = e.target;
-      setInput((prevInput) => ({
-        ...prevInput,
-        [name]: value,
-      }));
-    };
-  
-    const handleSave = () => {
-      setChange(false);
-    };
+  const [change, setChange] = useState(false);
+  const { input, setInput } = useContext(UserContext);
+  const handleEditToggle = () => {
+    setChange(!change);
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setInput((prevInput) => ({
+      ...prevInput,
+      [name]: value,
+    }));
+  };
+
+  const handleSave = () => {
+    setChange(false);
+  };
   return (
     <div className="m-5 mt-8 text-gray-800 space-y-4">
       {["name", "email", "contact", "address", "city", "pincode"].map(

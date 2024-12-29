@@ -1,7 +1,7 @@
 import React from "react";
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteIcon from "@material-ui/icons/Delete";
-import PostsApi from "../../componentApi/postsApi";
+import PostsApi from "../componentApi/postsApi";
 const Posts = () => {
   return (
     <div className="m-5 mt-8">

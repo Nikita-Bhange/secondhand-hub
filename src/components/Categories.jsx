@@ -1,16 +1,8 @@
-import React from "react";
-import CategoriesApi from "../../componentApi/CategoriesApi.js";
+import React, { useState } from "react";
+import CategoriesApi from "../componentApi/CategoriesApi.js";
 import { useNavigate } from "react-router-dom";
 
 const Categories = () => {
-  // const [hoverEffects, setHoverEffects] = useState("opacity-0");
-  // function handleHoverEnter() {
-  //   setHoverEffects(" opacity-1 bg-[rgba(0,0,0,0.2)]");
-  // }
-
-  // function handleHoverExit() {
-  //   setHoverEffects(" opacity-0");
-  // }
   const navigate = useNavigate();
   return (
     <>
@@ -25,10 +17,15 @@ const Categories = () => {
           <div className={`  m-2 shadow-lg rounded-lg overflow-hidden   `}>
             <img
               src={item.image[0]}
-              className="w-[100%]  h-[100%] hover:scale-110 transition ease-in-out  relative duration-100 cursor-pointer  "
-              alt="category_img" onClick={()=> navigate(`/category/${item.title}`,{ state: { name: item.title } }  )}
+              className="w-[100%]  h-[100%] hover:scale-110 hover:opacity-70 ease-in-out transition-opacity duration-500 relative  cursor-pointer  "
+              alt="category_img"
+              onClick={() =>
+                navigate(`/category/${item.title}`, {
+                  state: { name: item.title },
+                })
+              }
             />
-             
+
             <div className="flex  w-[100%] h-[100%] left-0 top-0 items-center shadow-lg  flex-col">
               <h2 className=" text-gray  relative font-bold bottom-20 text-[30px]">
                 {item.title}
