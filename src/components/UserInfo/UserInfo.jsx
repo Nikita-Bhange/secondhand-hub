@@ -1,9 +1,10 @@
-import {React,useState} from "react";
+import {React,useContext,useState} from "react";
 import EditIcon from "@material-ui/icons/Edit";
 import DoneIcon from "@material-ui/icons/Done";
-const UserInfo = ({input,setInput}) => {
+import { UserContext} from "../../context/User";
+const UserInfo = () => {
     const [change, setChange] = useState(false);
-  
+    const {input,setInput} = useContext(UserContext)
     const handleEditToggle = () => {
       setChange(!change);
     };

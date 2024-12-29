@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer.jsx'
 import ProductPage from './pages/ProductPage.jsx'
 import ScrollToTop from './components/ScrollTop/ScrollToTop.jsx'
 import Profile from './pages/Profile.jsx'
+import Payment from './pages/Payment.jsx'
 const App = () => {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/category/:id' element={<ProductPage/>}/>
         <Route path='/Profile' element={<Profile/>}/>
+        <Route path='/Payment' element={<Payment/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
