@@ -22,7 +22,7 @@ const Footer = () => {
           <div className={socialStyle + ` bg-sky-400`}>
             <Twitter />
           </div>
-          <div className={socialStyle + ` bg-red-600`}>
+          <div className={socialStyle + `  bg-red-600`}>
             <Pinterest/>
           </div>
         </div>

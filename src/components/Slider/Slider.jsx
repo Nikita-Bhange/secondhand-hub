@@ -3,7 +3,7 @@ import furniture from '../../assets/furniture.jpeg'
 const Slider = () => {
   return (
     <div className='p-10'>
-        <img src={furniture} className='w-full' alt="cloths"/>
+        <img src={furniture} className='w-full h-1/6' alt="cloths"/>
     </div>
   )
 }
