@@ -38,7 +38,9 @@ const Payment = () => {
         )}
 
         {/* Main Content */}
-        <div className="flex flex-col lg:flex-row w-5/6 rounded-lg shadow-lg overflow-hidden justify-around md:justify-items-center bg-white">
+        
+        <div className="w-5/6 rounded-2xl shadow-lg bg-gradient-to-r from-cyan-400 to-blue-500 md:p-[3px] overflow-hidden">
+          <div className="flex flex-col lg:flex-row  rounded-xl overflow-hidden justify-around md:justify-items-center bg-white">
           <div className="left lg:w-[40vw] p-6 w-full">
             <UserInfo />
           </div>
@@ -74,19 +76,19 @@ const Payment = () => {
             </div>
           </div>
         </div>
-
+        </div>
         {/* Action Buttons */}
         <div className="mt-6 flex flex-col items-center gap-4">
           <button
             onClick={handleProceed}
-            className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
+            className=" text-white px-6 py-2 rounded-md bg-gradient-to-r from-cyan-400 to-blue-500 m-3 transition hover:scale-105"
           >
             Proceed
           </button>
           {displayMessage && (
             <button
               onClick={handleDownloadInvoice}
-              className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition"
+              className="bg-green-600 text-white px-6 py-2 m-1 rounded-md hover:bg-green-400 transition"
             >
               Download Invoice
             </button>

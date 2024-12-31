@@ -13,7 +13,7 @@ function Profile() {
       <div className="min-h-screen  bg-gray-100 flex justify-center items-center">
         <div className="bg-white mb-[10%] shadow-lg rounded-lg overflow-hidden w-full max-w-4xl m-10">
           {/* Profile Header */}
-          <div className="bg-blue-900 h-40" />
+          <div className="bg-gradient-to-r from-cyan-400 to-blue-500 h-40" />
           <div className="relative -mt-20 px-6">
             <div className="flex justify-center">
               <img
