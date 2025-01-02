@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import FavoriteIcon from "@material-ui/icons/Favorite";
+import { Link } from "react-router-dom";
 
 const Products = ({ category }) => {
   const [favourites, setFavourites] = useState(Array(8).fill(false)); // Array to track favourites for each product
@@ -19,12 +20,13 @@ const Products = ({ category }) => {
           <div
             key={index}
             className="border p-4 m-4 rounded shadow hover:shadow-lg w-full md:w-[20vw] hover:cursor-pointer flex md:flex-col self-center transition hover:scale-110 "
-          >
+          ><Link to={"/product"}>
             <img
               src={`https://via.placeholder.com/150`}
               alt={`Product ${index + 1}`}
               className="md:w-full h-40 object-cover mb-4 w-[25%] self-center"
             />
+             </Link>
             <div className="info md:m-0 m-5 w-full">
               <h3 className="font-medium text-lg mb-2">Product {index + 1}</h3>
               <p className="text-gray-500">Rs 999</p>
@@ -45,6 +47,7 @@ const Products = ({ category }) => {
               </div>
             </div>
           </div>
+         
         ))}
       </div>
     </div>
