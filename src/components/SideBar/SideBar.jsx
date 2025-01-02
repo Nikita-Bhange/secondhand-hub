@@ -2,14 +2,14 @@ import React from 'react'
 
 const SideBar = ({hasCategory}) => {
   return (
-    <div className="md:sticky max-h-fit top-0 md:max-h-screen h-screen overflow-y-auto w-full md:w-1/4 bg-gray-300 p-8 ">
+    <div className="md:sticky max-h-fit top-0 md:max-h-screen h-screen overflow-y-auto w-full md:w-1/4 bg-gradient-to-r from-cyan-400 to-blue-400 border-0 p-8 ">
     <h2 className="text-xl font-semibold mb-4">Filters</h2>
     {hasCategory && (
-      <div className="mb-6">
+      <div className="mb-6 ">
         <h3 className="font-medium text-lg mb-2">Categories</h3>
         <ul>
           <li>
-            <input type="checkbox" id="electronics" className="mr-2" />
+            <input type="checkbox" id="electronics" className="mr-2 " />
             <label htmlFor="electronics">Electronics</label>
           </li>
           <li>

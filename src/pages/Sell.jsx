@@ -51,9 +51,16 @@ const Sell = () => {
             <option value="">Furniture</option>
         </select>
         
-        
-        <label >Used Duration</label>
-        <input type="text" className='mb-7 bg-[#eaecee] rounded-lg h-14 w-1/2' placeholder='E.g.1 Month,1 Year' />
+        <label > used duration</label>
+        <select className=" border-2 border-solid mb-7 w-1/2 h-14 rounded-xl" name=""  id="">
+        <option value="" selected > none</option>
+            <option value="">Less than 6 Months</option>
+            <option value="">6 Months - 1 Year</option>
+            <option value="">1 Year - 2 Years</option>
+            <option value="">2 Years - 4 Years</option>
+            <option value="">More than 4 Years</option>
+            
+        </select>
          <label>Price</label>
         <input type="text" className='mb-7 bg-[#eaecee] rounded-lg h-14 w-1/2' />
 

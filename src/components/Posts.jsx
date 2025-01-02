@@ -10,7 +10,7 @@ const Posts = () => {
         {PostsApi.map((post, index) => (
           <div
             key={index}
-            className="bg-gray-100 p-4 rounded shadow flex items-center space-x-4 transition hover:scale-105 hover:bg-slate-300"
+            className="bg-gray-100 p-4 rounded shadow flex items-center space-x-4 transition hover:scale-105 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-blue-400"
           >
             <img
               src={post.image}
@@ -22,7 +22,7 @@ const Posts = () => {
               <p className="text-sm text-gray-600">{post.description}</p>
             </div>
             <div className="flex space-x-2">
-              <EditIcon className="cursor-pointer text-blue-500" />
+              <EditIcon className="cursor-pointer text-yellow-500" />
               <DeleteIcon className="cursor-pointer text-red-500" />
             </div>
           </div>
