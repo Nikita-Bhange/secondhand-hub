@@ -41,3 +41,4 @@ const Products = ({ category }) => {
 };
 
 export default Products;
+

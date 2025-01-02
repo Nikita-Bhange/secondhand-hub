@@ -49,7 +49,7 @@ const Payment = () => {
             <div className="flex flex-col items-center">
               <h1 className="font-extrabold text-lg mb-2">Bicycle</h1>
               <img
-                src="https://plus.unsplash.com/premium_photo-1678718713393-2b88cde9605b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://m.media-amazon.com/images/I/71YZwR-ykEL._SY522_.jpg"
                 alt="Product"
                 className="w-56 h-60 rounded-md mb-4"
               />

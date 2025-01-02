@@ -10,6 +10,7 @@ import AddToCart from "./pages/AddToCart.jsx";
 import Login from "./pages/Login.jsx";
 import SignUP from "./pages/SignUP.jsx";
 import Sell from "./pages/Sell.jsx";
+import Product from "./pages/Product.jsx";
 const App = () => {
   return (
     <BrowserRouter>
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/Payment" element={<Payment />} />
         <Route path="/history" element={<History />} />
         <Route path="/addtocart" element={<AddToCart />} />
+        <Route path="/product" element={<Product/>}/>
       </Routes>
     </BrowserRouter>
   );

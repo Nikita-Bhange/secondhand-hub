@@ -13,9 +13,9 @@ const Header = () => {
     <>
       <div className="sticky top-0 w-full z-50 bg-white shadow-md ">
         <div className="wrapper pr-[10px] flex justify-between items-center mobile:pl-0 mobile:pr-0">
-          <div className="w-[160px] m-3 pl-4">
+          <div className="w-[180px] m-3 pl-4">
             <NavLink to="/">
-              <img src={logo} alt="logo" className="w-[160px]" />
+              <img src={logo} alt="logo" className="w-[180px]" />
             </NavLink>
           </div>
 
